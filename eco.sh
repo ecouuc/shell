@@ -2,7 +2,7 @@
 #安装weget curl依赖包
 #yum update -y && yum install curl -y #CentOS/Fedora
 #apt-get update -y && apt-get install curl -y #Debian/Ubuntu
-#远程下载代码curl -sS -O https://raw.githubusercontent.com/ecouuc/shell/main/eco.sh && chmod +x eco.sh && sleep 1 && bash eco.sh
+#远程下载代码curl -sS -O https://raw.githubusercontent.com/ecouuc/shell/main/eco.sh && chmod +x eco.sh && sleep 1 && ./eco.sh
 #!/bin/bash
 ln -sf ~/eco.sh /usr/local/bin/e
 
@@ -5576,7 +5576,7 @@ EOF
 
 
   00)
-    curl -sS -O https://raw.githubusercontent.com/Aovo7/One-click/main/eco.sh && chmod +x eco.sh
+    curl -sS -O https://raw.githubusercontent.com/ecouuc/shell/main/eco.sh && chmod +x eco.sh && sleep 1 && ./eco.sh
     echo "脚本已更新到最新版本！"
     break_end
     kejilion
