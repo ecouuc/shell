@@ -6,10 +6,10 @@
 原仓库地址：https://github.com/kejilion/sh
 
 ## 使用和分发
-安装weget curl依赖包：<br>
+### 1.安装weget curl依赖包：<br>
 **CentOS/Fedora**：`yum update -y && yum install curl -y` <br>
 **Debian/Ubuntu**：`apt-get update -y && apt-get install curl -y` <br>
-#远程下载代码（一键指令）
+### 2.远程下载代码（一键指令）
 `curl -sS -O https://raw.githubusercontent.com/ecouuc/shell/main/eco.sh && chmod +x eco.sh && sleep 1 && ./eco.sh`
 
 
