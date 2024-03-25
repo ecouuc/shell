@@ -2082,7 +2082,7 @@ EOF
         for file in /home/web/conf.d/*; do
             filename=$(basename "$file")
             filename_no_extension="${filename%.*}"
-            echo "$filename_no_extension"
+            printf "%s\n" "$filename_no_extension"
         done
         echo "------------------------"
 
