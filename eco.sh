@@ -2,7 +2,7 @@
 #安装weget curl依赖包
 #yum update -y && yum install curl -y #CentOS/Fedora
 #apt-get update -y && apt-get install curl -y #Debian/Ubuntu
-#远程下载代码curl -sS -O https://raw.githubusercontent.com/ecouuc/shell/main/eco.sh && chmod +x eco.sh && ./eco.sh
+#远程下载代码curl -sS -O https://raw.githubusercontent.com/Aovo7/One-click/main/eco.sh && chmod +x eco.sh && ./eco.sh
 #!/bin/bash
 ln -sf ~/eco.sh /usr/local/bin/e
 
@@ -2077,9 +2077,17 @@ EOF
         echo "------------------------"
         echo ""
 
+        echo "站点域名"
+        echo "------------------------"
+        for file in /home/web/conf.d/*; do
+            filename=$(basename "$file")
+            filename_no_extension="${filename%.*}"
+            echo "$filename_no_extension"
+        done
+        echo "------------------------"
 
         # ls -t /home/web/conf.d | sed 's/\.[^.]*$//'
-        echo "站点信息                      证书到期时间"
+        echo "站点证书                      证书到期时间"
         echo "------------------------"
         for cert_file in /home/web/certs/*_cert.pem; do
           domain=$(basename "$cert_file" | sed 's/_cert.pem//')
