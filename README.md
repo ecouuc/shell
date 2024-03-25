@@ -9,7 +9,7 @@
 安装weget curl依赖包：<br>
 **CentOS/Fedora**：`yum update -y && yum install curl -y` <br>
 **Debian/Ubuntu**：`apt-get update -y && apt-get install curl -y` <br>
-#远程下载代码curl -sS -O https://raw.githubusercontent.com/ecouuc/shell/main/eco.sh && chmod +x eco.sh && ./eco.sh
+#远程下载代码curl -sS -O https://raw.githubusercontent.com/ecouuc/shell/main/eco.sh && chmod +x eco.sh && sleep 1 && ./eco.sh
 
 
 - 此仓库中的代码仅供学习和研究目的，不应用于商业或生产环境。
